@@ -1,0 +1,11 @@
+
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redirect…</title>
+<link rel="canonical" href="/fr/index.html">
+<script>
+// Try to send French browsers to FR, otherwise EN
+const lang = (navigator.language||'').toLowerCase();
+if(lang.startsWith('fr')){ location.replace('fr/index.html'); }
+else { location.replace('en/index.html'); }
+</script>
+<p>Redirection… <a href="fr/index.html">FR</a> | <a href="en/index.html">EN</a></p>
